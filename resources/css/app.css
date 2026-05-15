@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pagination styling */
+.pagination {
+    @apply flex justify-center space-x-2;
+}
+.pagination .page-item {
+    @apply block;
+}
+.pagination .page-link {
+    @apply px-3 py-1 border rounded hover:bg-gray-100;
+}
+.pagination .active .page-link {
+    @apply bg-blue-500 text-white border-blue-500;
+}
